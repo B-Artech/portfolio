@@ -4,6 +4,8 @@ const intervals = Array(counters.length);
 const icon = document.querySelector('.bx-moon')
 const icon2 = document.querySelector('.bx-sun')
 const body = document.querySelector('body')
+const element = document.querySelector('a');
+    
 counters.fill(0)
 
 
@@ -34,18 +36,23 @@ icon2.addEventListener('click', () => {
     }
 })
 
+document.getElementById('copy-phone').addEventListener('click', function() {
+    const phoneNumber = document.getElementById('phone-number').innerText;
 
+    // Copy to clipboard
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+      alert('Phone number copied: ' + phoneNumber);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  });
 
-const person = {
-    id: 3,
-    name: 'downia',
-    age: 47,
-}
-
-person.id = 55
-
-
-const bazyl = person.id
-
-
-console.log(bazyl)
+  document.getElementById('copy-email').addEventListener('click', function() {
+    const email = document.getElementById('email-address').innerText;
+    navigator.clipboard.writeText(email).then(() => {
+      alert('Email copied: ' + email);
+    }).catch(err => {
+      console.error('Failed to copy email: ', err);
+    });
+  });
+  

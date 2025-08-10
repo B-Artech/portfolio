@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
     <script src="https://kit.fontawesome.com/56e5766715.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,9 +20,7 @@
                 <div class="profile_text">
                     <h2 class="name">Bartholomew Staskiewicz</h2>
                     <br>
-                    <p>Automated Trading</p>
-                    <br>
-                    <p>Self Taught Web Developer</p>
+                    <p>Financial Professional</p>
                 </div>
             </div>
             <i class='bx bx-moon'></i>
@@ -30,56 +28,58 @@
 
             <div class="contact">
 
-                <h3 class="title">Contact
-                    <h3 />
+                <h3 class="title">Contact</h3 >
                     <ul>
                         <li>
-                            <p class="contact-text"><i class="fas fa-solid fa-phone"></i><a
-                                    href="tel: +48 533 926 609">Call</a></p>
+                            <p class="contact-text">
+                                <i id="copy-phone" class="fas fa-solid fa-phone"></i>
+                                <a id="phone-number">+48 533 926 609</a>
+                                <a class="icon-link" href="" target="_blank"></a>
+                            </p>
                         </li>
                         <li>
-                            <p class="contact-text"><i class="fas fa-thin fa-envelope"></i><a
-                                    href="mailto: bart.staskiewicz@gmail.com">Email</a></p>
+                            <p class="contact-text">
+                                <i id="copy-email" class="fas fa-thin fa-envelope"></i>
+                                <a id="email-address">Bart.staskiewicz@gmail.com</a></p>
+                                <a class="icon-link" href="" target="_blank"></a>
                         </li>
                         <li>
-                            <p class="contact-text"><i class="fas fa-brands fa-linkedin-in"></i><a
-                                    href="https://www.linkedin.com/in/bartek-staskiewicz-a57b901a/"
-                                    target="_blank">linkedin Profile</a></p>
+                            <p class="contact-text"><i class="fas fa-brands fa-linkedin-in"></i>
+                                <a class="icon-link" href="https://www.linkedin.com/in/bartek-staskiewicz-a57b901a/" target="_blank">LinkedIn Profile</a>
+                            </p>
                         </li>
                         <li>
-                            <p class="contact-text"><i class="fas fa-brands fa-github"></i><a
-                                    href="https://github.com/B-Artech" target="_blank">Git Hub</a></p>
+                            <p class="contact-text"><i class="fas fa-brands fa-github"></i>
+                                <a class="icon-link" href="https://github.com/B-Artech" target="_blank">GitHub</a>
+                            </p>
                         </li>
                         <li>
-                            <p class="contact-text"><i class="fas fa-solid fa-location-dot"></i><a
-                                    href="https://goo.gl/maps/sbg651qFnEcbegYeA" target="_blank">Location</a></p>
+                            <p class="contact-text"><i class="fas fa-solid fa-location-dot"></i><a>Wroclaw</a></p>
                         </li>
                     </ul>
-                    <div class="languages">
-                        <h3 class="title">languages</h3>
+                    
+                    <div class="interest">
+                        <h3 class="title">letter</h3>
                         <ul>
                             <li>
-                                <p>English</p>
-                                <p>Fluent</p>
+                                <p class="contact-text"><i class="fas fa-solid fa-file"></i>
+                                    <a class="icon-link" href="https://drive.google.com/file/d/1YsN9H1D52odJux_Gt8zBS-mQ1XLEd4HJ/view?usp=sharing" target="_blank">Motivation Letter</a>
+                                </p>
                             </li>
-                            <li>
-                                <p>Polish</p>
-                                <p>Native</p>
-                            </li>
+
                         </ul>
                     </div>
                     <div class="interest">
                         <h3 class="title">interests</h3>
-                        <p>Algorithm Development & Coding</p>
-                        <p>Finance & Blockchain</p>
-                        <p>Web Design & Development</p>
+                        <p>Financial Markets</p>
+                        <p>Data analysis</p>
+                        <p>Development & Coding</p>
                     </div>
                     <div class="interest">
                         <h3 class="title">education</h3>
-                        <p>Certificate:</p>
+                        <p>Economics</p>
                         <p>Institute of Trading & Portfolio Management</p>
                         <p>A Level, Literature, Language, Math</p>
-                        <p>High School</p>
                     </div>
             </div>
         </div>
@@ -89,11 +89,11 @@
             <div class="aboutme">
                 <div class="aboutme-content">
                     <h3 class="title">Profile</h3>
-                    <p>Currently focused on leveraging my expertise in automated trading systems, real-time execution frameworks, and risk management. Passionate about developing innovative trading solutions, I apply my financial markets knowledge and programming skills to create efficient and data-driven strategies.</p>
+                    <p>Finance professional with a proven track record in liquidity reporting, derivatives operations, and data-driven decision-making, with deep market knowledge and strong Python expertise. Skilled in building quantitative models, automating analysis, and extracting actionable insights from complex financial datasets.</p>
                 </div>
             </div>
             <br>
-            <h3 class="title">Recent Projects</h3>
+            <h3 class="title">Projects</h3>
             <div class="project">
                 <div class="project__container">
                     <div class="project__container--box">
@@ -103,7 +103,8 @@
                             <br/>
                             <p>Market Regimes: <br/>Market neutral strategy<p/>
                             </div>
-                            <a href="https://github.com/B-Artech/Statistical-Arbitrage" target="_blank">showcase</a>
+                            <a href="https://github.com/B-Artech/Statistical-Arbitrage" class='btn'
+                            target="_blank">View Case Study</a>
                     </div>
                     <div class="project__container--box">
                         <h4 class="project__header">Mean Reversion Trading Bot</h4>
@@ -112,27 +113,30 @@
                             <br/>
                             <p>Market Regimes: <br/>Reversion in the direction of the trend.<p/>
                             </div>
-                            <a href="https://github.com/B-Artech/Trend-follow-mean-revert" target="_blank">showcase</a>
+                            <a href="https://github.com/B-Artech/Trend-follow-mean-revert" class='btn' 
+                            target="_blank">View Case Study</a>
                     </div>
                     <div class="project__container--box">
                         <h4 class="project__header">Idea Generation Watchlist</h4>
                         <div class="project__container--about">
                             <p>Watch-List is a web app that leverages the Alpha Vantage API to track and manage stock ideas.
-                                <p/>
+                            </p>
                         </div>
-                        <a href="https://github.com/B-Artech/Spread-Watchlist" target="_blank">readme</a>
-                        <a href="https://b-artech.github.io/Spread-Watchlist/" target="_blank">preview</a>
+                        <a href="https://b-artech.github.io/Spread-Watchlist/" 
+                        class='btn' 
+                        target="_blank">View Case Study</a>
                     </div>
                     <div class="project__container--box">
-                        <h4 class="project__header">Under Development</h4>
+                        <h4 class="project__header">Market regime detection</h4>
                         <div class="project__container--about">
-                            <p>Regime-Switching Trading Strategy.<p />
                                 <br/>
                             <p>Key Komponents: <br/>Market Regime Detection using Hiden Markow Model(HMM).
+                                <br/>
                                 Volatility Base measure using GARCH Model.
-                                <p/>
+                            </p>
                         </div>
-                        <a href="https://www.quantstart.com/articles/market-regime-detection-using-hidden-markov-models-in-qstrader/" target="_blank">preview</a>
+                        <a href="https://github.com/B-Artech/SP500-HMM-Modle/tree/main" class='btn'
+                        target="_blank">View Case Study</a>
                     </div>
                 </div>
             </div>
@@ -140,39 +144,28 @@
             <div class="skills">
                 <h3 class="title">Skills</h3>
                 <div class="skills__box">
-                    <div class="detail">
-                    <p>Python</p>
-                    <p class="progress" data-num="80"></p>
-                    </div>
-                    <div class="bar">
-                        <div id="html-bar"></div>
-                    </div>
-                    <div class="detail">
-                        <p>Pandas-Numpy-Talib-Ccxt</p>
-                        <p class="progress" data-num="70"></p>
-                    </div>
-                    <div class="bar">
-                        <div id="css-bar"></div>
-                    </div>
-                    <div class="detail">
-                        <p>Data Analysis and Visualization</p>
-                        <p class="progress" data-num="70"></p>
-                    </div>
-                    <div class="bar">
-                        <div id="saas-bar"></div>
-                    </div>
-                    <div class="detail">
-                        <p>Html - Css - Sass - JavaScript</p>
-                        <p class="progress" data-num="50"></p>
-                    </div>
-                    <div class="bar">
-                        <div id="java-bar"></div>
-                    </div>
+                    <div class="skill-tile">Python</div>
+                    <div class="skill-tile">Pandas</div>
+                    <div class="skill-tile">Numpy</div>
+                    <div class="skill-tile">Talib</div>
+                    <div class="skill-tile">CCXT</div>
+                    <div class="skill-tile">API Integration</div>
+                    <div class="skill-tile">Algorithmic Trading</div>
+                    <div class="skill-tile">Ubuntu/Linux Server</div>
+                    <div class="skill-tile">Cloud Deployment</div>
+                    <div class="skill-tile">MS Excel</div>
+                    <div class="skill-tile">Data Analysis</div>
+                    <div class="skill-tile">VBA</div>
+                    <div class="skill-tile">Bloomberg Terminal</div>
+                    <div class="skill-tile">Eicon Xenit Pro</div>
+                    <div class="skill-tile">IDE</div>
+                    <div class="skill-tile">Web Dev Tools</div>
+                    <div class="skill-tile">+ More</div>
                 </div>
             </div>
             <br />
             <div class="timeline-section">
-                <h3 class="title">Previous Ocupations</h3>
+                <h3 class="title">Experience</h3>
                 <div class="timeline-items">
                     <div class="timeline-item">
                         <div class="top"></div>
@@ -182,12 +175,17 @@
                             <span>June 2019</span>
                         </div>
                         <div class="timeline-content">
-                            <p class="timline-header">Liquidity Measurement & Reporting Analyst at Credit Suisse</p>
-                            <p> As a part of Unencumbered team, reporting and comprehensive data
-                                analysis on the Bank global liquidity management in order optimise the
-                                structure of the Bank funding and HQLA assets.
+                            <input type="checkbox" id="timeline1">
+                            <label for="timeline1" class="timeline-header">Liquidity Measurement & Reporting Analyst at Credit Suisse</label>
+                            <p class="accordion-content">
+                                •	Analyzed global liquidity data to optimize bank funding and HQLA asset structure.
+                                <br/>
+                                •	Prepared management reports using in-house databases and query tools.
+                                <br/>
+                                •	Managed ad-hoc requests and supported Liquidity Teams and Treasury in daily operations.
+                                
                             </p>
-                        </div>
+                          </div>
                     </div>
                     <div class="timeline-item">
                         <div class="top"></div>
@@ -197,10 +195,13 @@
                             <span>Aug 2018</span>
                         </div>
                         <div class="timeline-content">
-                            <p class="timline-header">Senior Representative, Middle Office at BNY Mellon</p>
-                            <p>Support day-to-day trade life cycle activates, including an active dialogue with
-                                interested parties by phone or email, querying a variety of issues looking for a
-                                timely resolution of transaction executed by Clients.
+                            <input type="checkbox" id="timeline2">
+                            <label for="timeline2" class="timeline-header">Senior Representative, Middle Office at BNY Mellon</label>
+                            <p class="accordion-content">
+                                •	Managed trade life cycle activities, resolving issues through active communication.
+                                <br/>
+                                •	Liaised with global financial institutions including Custodian Banks, Brokers, Asset Managers, and Securities Lending Agents.
+                                
                             </p>
                         </div>
                     </div>
@@ -212,9 +213,16 @@
                             <span>Jan 2017</span>
                         </div>
                         <div class="timeline-content">
-                            <p class="timline-header">Securities Specialist, Exchange Trade Derivatives at UBS</p>
-                            <p>Derivatives desk, responsible for the timely and accurate processing of
-                                derivatives product Futures and Options.
+                            <input type="checkbox" id="timeline3">
+                            <label for="timeline3" class="timeline-header">Securities Specialist, Exchange Trade Derivatives at UBS</label>
+                            <p class="accordion-content">
+                                •	Led process transition from Luxembourg to Wroclaw branch.
+                                <br/>
+                                •	Managed timely processing and validation of Futures and Options trades.
+                                <br/>
+                                •	Ensured regulatory compliance (MIFID II) in processing client trade instructions.
+                                <br/>
+                                •	Reconciled daily and monthly discrepancies for Stock, ETD, CFD, CDS, and IRS positions.
                             </p>
                         </div>
                     </div>
