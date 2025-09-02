@@ -95,9 +95,10 @@ body {
 	.profile_img {
 		max-height: 300px;
 		border-radius: 50%;
-		background: linear-gradient(to right, rgba(57, 82, 96, 0.278), rgba(41, 55, 63, 0.697));
+		background: linear-gradient(to right, rgba(57, 82, 96, 0.082), rgba(41, 55, 63, 0.697));
 		object-fit: cover;
 		overflow: hidden;
+		box-shadow: 5px 5px 15px rgba(44, 55, 67, 0.278);
 	}
 
 	.profile_text {
